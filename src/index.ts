@@ -1,7 +1,11 @@
 // Exports
-export * from './array';
-export * from './object';
-export * from './string';
+export * as array from './array';
+export * as map from './map';
+export * as math from './math';
+export * as object from './object';
+export * as set from './set';
+export * as string from './string';
+
 
 // Import array utility methods
 import chunk from './array/chunk';
@@ -12,7 +16,7 @@ import groupBy from './array/groupBy';
 
 // Import map utility methods
 import invert from './map/invert';
-import filterMap from './map/filter';
+import filterMap from './map/filterMap';
 import mapValues from './map/mapValues';
 
 // Import math utility methods
