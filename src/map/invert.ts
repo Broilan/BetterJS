@@ -1,7 +1,14 @@
-export default function invert<K, V>(map: Map<K, V>): Map<V, K> {
-    const inverted = new Map<V, K>();
+/**
+ * Swaps keys and values in a Map.
+ * @param map - The Map to invert.
+ * @returns A new Map with keys and values swapped.
+ * @example invert(new Map([['a', 1], ['b', 2]])) => Map { 1 => 'a', 2 => 'b' }
+ * @complexity O(n)
+ */
+export function invert<K, V>(map: Map<K, V>): Map<V, K> {
+    const result = new Map<V, K>();
     for (const [key, value] of map) {
-        inverted.set(value, key);
+        result.set(value, key);
     }
-    return inverted;
+    return result;
 }
