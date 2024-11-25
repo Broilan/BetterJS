@@ -20,13 +20,13 @@
 Install via npm:
 
 ```bash
-npm install better-js-utils
+npm install BetterJS
 ```
 
 Or yarn:
 
 ```bash
-yarn add better-js-utils
+yarn add BetterJS
 ```
 
 ---
