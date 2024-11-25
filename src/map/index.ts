@@ -1,5 +1,5 @@
-export { invert } from './invert';
-export { filterMap } from './filterMap';
-export { mapValues } from './mapValues';
-export { mapKeys } from './mapKeys';
-export { mergeMaps } from './mergeMaps';
+export { default as invert } from './invert';
+export { default as filterMap } from './filterMap';
+export { default as mapValues } from './mapValues';
+export { default as mapKeys } from './mapKeys';
+export { default as mergeMaps } from './mergeMaps';

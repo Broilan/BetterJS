@@ -6,7 +6,7 @@
  * @example lcm(4, 6) => 12
  * @complexity O(log(min(a, b)))
  */
-export function lcm(a: number, b: number): number {
+export default function lcm(a: number, b: number): number {
     const absA = Math.abs(a);
     const absB = Math.abs(b);
 

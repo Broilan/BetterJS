@@ -6,7 +6,7 @@
  * @example gcd(12, 8) => 4
  * @complexity O(log(min(a, b)))
  */
-export function gcd(a: number, b: number): number {
+export default function gcd(a: number, b: number): number {
     while (b !== 0) {
         [a, b] = [b, a % b];
     }

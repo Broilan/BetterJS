@@ -6,7 +6,7 @@
  * @example chunk([1, 2, 3, 4, 5], 2) => [[1, 2], [3, 4], [5]]
  * @complexity O(n)
  */
-export function chunk<T>(arr: T[], size: number): T[][] {
+export default function chunk<T>(arr: T[], size: number): T[][] {
     if (size <= 0) throw new Error("Size must be greater than 0");
     const result: T[][] = [];
     for (let i = 0; i < arr.length; i += size) {

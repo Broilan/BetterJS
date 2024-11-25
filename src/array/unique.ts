@@ -5,6 +5,6 @@
  * @example unique([1, 2, 2, 3, 4, 4]) => [1, 2, 3, 4]
  * @complexity O(n)
  */
-export function unique<T>(arr: T[]): T[] {
+export default function unique<T>(arr: T[]): T[] {
     return Array.from(new Set(arr));
 }

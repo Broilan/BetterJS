@@ -7,6 +7,6 @@
  * @example lerp(0, 100, 0.5) => 50
  * @complexity O(1)
  */
-export function lerp(start: number, end: number, t: number): number {
+export default function lerp(start: number, end: number, t: number): number {
     return start + t * (end - start);
 }

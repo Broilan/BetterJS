@@ -5,7 +5,7 @@
  * @example unzip([[1, 'a'], [2, 'b']]) => [[1, 2], ['a', 'b']]
  * @complexity O(n)
  */
-export function unzip<T, U>(pairs: [T, U][]): [T[], U[]] {
+export default function unzip<T, U>(pairs: [T, U][]): [T[], U[]] {
     const first: T[] = [];
     const second: U[] = [];
     for (const [a, b] of pairs) {

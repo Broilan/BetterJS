@@ -7,7 +7,7 @@
  * => Map { 'A' => 1, 'B' => 2 }
  * @complexity O(n)
  */
-export function mapKeys<K, V, U>(map: Map<K, V>, transform: (key: K) => U): Map<U, V> {
+export default function mapKeys<K, V, U>(map: Map<K, V>, transform: (key: K) => U): Map<U, V> {
     const result = new Map<U, V>();
     for (const [key, value] of map) {
         result.set(transform(key), value);

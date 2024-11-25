@@ -11,7 +11,7 @@
  * ) => Map { 'a' => 1, 'b' => 5, 'c' => 4 }
  * @complexity O(n + m)
  */
-export function mergeMaps<K, V>(
+export default function mergeMaps<K, V>(
     map1: Map<K, V>,
     map2: Map<K, V>,
     resolver: (value1: V, value2: V) => V

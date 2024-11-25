@@ -7,6 +7,6 @@
  * @example clamp(10, 0, 5) => 5
  * @complexity O(1)
  */
-export function clamp(num: number, min: number, max: number): number {
+export default function clamp(num: number, min: number, max: number): number {
     return Math.min(Math.max(num, min), max);
 }

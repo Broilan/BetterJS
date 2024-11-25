@@ -11,34 +11,44 @@ export * as string from './string';
 import chunk from './array/chunk';
 import flatten from './array/flatten';
 import unique from './array/unique';
-import intersect from './array/intersection';
+import intersection from './array/intersection';
 import groupBy from './array/groupBy';
+import difference from './array/difference';
+import partition from './array/partition';
+import shuffle from './array/shuffle';
+import zip from './array/zip';
+import unzip from './array/unzip';
 
 // Import map utility methods
 import invert from './map/invert';
 import filterMap from './map/filterMap';
 import mapValues from './map/mapValues';
+import mergeMaps from './map/mergeMaps';
+import mapKeys from './map/mapKeys';
 
 // Import math utility methods
 import lerp from './math/lerp';
 import clamp from './math/clamp';
 import isPrime from './math/isPrime';
-import sum from './math/sum';
+import factorial from './math/factorial';
+import gcd from './math/gcd';
+import lcm from './math/lcm';
+import mean from './math/mean';
+
 
 // Import object utility methods
 import deepClone from './object/deepClone';
-import merge from './object/merge';
 import isEmpty from './object/isEmpty';
 import get from './object/get';
+import omit from './object/omit';
+import pick from './object/pick';
 
 // Import set utility methods
 import union from './set/union';
-import difference from './set/difference';
-import intersection from './set/intersection';
 import isSubset from './set/isSubset';
+import filterSubset from './set/filterSubset';
 
 // Import string utility methods
-import toTitleCase from './string/toTitleCase';
 import reverse from './string/reverse';
 import truncate from './string/truncate';
 import isPalindrome from './string/isPalindrome';
@@ -50,28 +60,39 @@ export class BetterJS {
         chunk,
         flatten,
         unique,
-        intersect,
+        intersection,
         groupBy,
+        difference,
+        partition,
+        shuffle,
+        zip,
+        unzip
     };
 
     static map = {
         invert,
-        filter: filterMap,
+        filterMap,
         mapValues,
+        mergeMaps,
+        mapKeys,
     };
 
     static math = {
         lerp,
         clamp,
         isPrime,
-        sum,
+        factorial,
+        gcd,
+        lcm,
+        mean,
     };
 
     static object = {
         deepClone,
-        merge,
         isEmpty,
         get,
+        omit,
+        pick,
     };
 
     static set = {
@@ -79,10 +100,10 @@ export class BetterJS {
         difference,
         intersection,
         isSubset,
+        filterSubset
     };
 
     static string = {
-        toTitleCase,
         reverse,
         truncate,
         isPalindrome,

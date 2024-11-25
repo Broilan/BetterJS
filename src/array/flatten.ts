@@ -5,6 +5,6 @@
  * @example flatten([1, [2, [3, 4]], 5]) => [1, 2, 3, 4, 5]
  * @complexity O(n)
  */
-export function flatten<T>(arr: any[]): T[] {
+export default function flatten<T>(arr: any[]): T[] {
     return arr.reduce<T[]>((acc, val) => acc.concat(Array.isArray(val) ? flatten(val) : val), []);
 }

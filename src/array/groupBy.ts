@@ -7,7 +7,7 @@
  * => { a: ['apple'], b: ['banana'], c: ['cherry'] }
  * @complexity O(n)
  */
-export function groupBy<T, K extends keyof any>(arr: T[], keyFn: (item: T) => K): Record<K, T[]> {
+export default function groupBy<T, K extends keyof any>(arr: T[], keyFn: (item: T) => K): Record<K, T[]> {
     return arr.reduce((acc, item) => {
         const key = keyFn(item);
         // Ensure the key is initialized in the accumulator

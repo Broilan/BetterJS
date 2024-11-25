@@ -7,7 +7,7 @@
  * => Map { 'b' => 2 }
  * @complexity O(n)
  */
-export function filterMap<K, V>(
+export default function filterMap<K, V>(
     map: Map<K, V>,
     predicate: ([key, value]: [K, V]) => boolean
 ): Map<K, V> {
