@@ -1,11 +1,10 @@
-export default function flatten<T>(array: any[], depth: number = Infinity): T[] {
-    return depth > 0
-        ? array.reduce(
-              (acc, val) =>
-                  Array.isArray(val)
-                      ? acc.concat(flatten<T>(val, depth - 1))
-                      : acc.concat(val),
-              [] as T[]
-          )
-        : array.slice();
+/**
+ * Flattens a nested array into a single-level array.
+ * @param arr - The nested array to flatten.
+ * @returns A single-level array.
+ * @example flatten([1, [2, [3, 4]], 5]) => [1, 2, 3, 4, 5]
+ * @complexity O(n)
+ */
+export function flatten<T>(arr: any[]): T[] {
+    return arr.reduce<T[]>((acc, val) => acc.concat(Array.isArray(val) ? flatten(val) : val), []);
 }

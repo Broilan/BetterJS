@@ -11,7 +11,7 @@ export * as string from './string';
 import chunk from './array/chunk';
 import flatten from './array/flatten';
 import unique from './array/unique';
-import intersect from './array/intersect';
+import intersect from './array/intersection';
 import groupBy from './array/groupBy';
 
 // Import map utility methods
