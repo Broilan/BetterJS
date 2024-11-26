@@ -6,7 +6,7 @@
 
 ## Features
 
-- **Array Utilities**: Perform common operations like chunking, flattening, and grouping effortlessly.
+- **Array Utilities**: Perform common operations like chunking, flattening, and grouping.
 - **Map Utilities**: Manipulate Maps with ease, including filtering and key-value transformations.
 - **Math Utilities**: Simplify mathematical computations such as interpolation, factorials, and finding primes.
 - **Object Utilities**: Clone, pick, omit, and validate objects with minimal effort.
