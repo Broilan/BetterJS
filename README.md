@@ -66,7 +66,7 @@ BetterJS.array.unzip(arrayOfPairs);
 | `intersection`   | Finds the common elements between two arrays.                                               |
 | `groupBy`        | Groups elements of an array by a specified key or function.                                 |
 | `difference`     | Returns elements in the first array not found in the second.                                |
-| `partition`      | Splits an array into two arrays based on a predicate.                                       |
+| `partition`      | Splits an array into two arrays based on a quality.                                       |
 | `shuffle`        | Randomly shuffles the elements of an array.                                                 |
 | `zip`            | Combines two arrays into an array of pairs.                                                 |
 | `unzip`          | Splits an array of pairs into two arrays.                                                   |
