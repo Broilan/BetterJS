@@ -85,7 +85,7 @@ BetterJS.map.mapKeys(map, transformFn);
 
 | Function       | Description                                                                                  |
 |----------------|----------------------------------------------------------------------------------------------|
-| `invert`       | Swaps keys and values in a Map.                                                             |
+| `invert`       | Swaps keys and values.                                                             |
 | `filterMap`    | Filters Map entries based on a predicate.                                                   |
 | `mapValues`    | Transforms the values of a Map using a callback function.                                   |
 | `mergeMaps`    | Combines two Maps, resolving conflicts with a callback.                                     |
